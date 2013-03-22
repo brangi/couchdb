@@ -1,7 +1,6 @@
 define([
   // Libraries.
   "jquery",
-  "lodash",
   "backbone",
 
   "helpers",
@@ -10,8 +9,7 @@ define([
   "plugins/backbone.layoutmanager"
 ],
 
-function($, _, Backbone, Helpers) {
-
+function($, Backbone, Helpers) {
   // Make sure we have a console.log
   if (typeof console == "undefined") {
     console = {
@@ -62,7 +60,6 @@ function($, _, Backbone, Helpers) {
       }
     }
   });
-
   // Mix Backbone.Events, and modules into the app object.
   return _.extend(app, {
     // Create a custom object with a nested Views object.

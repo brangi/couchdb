@@ -12,10 +12,9 @@
 
 define([
   // Libraries.
-  "jquery",
-  "lodash"
+  "jquery"
 ],
-function($, _){
+function($){
   $.contribute = function(message, file){
     /*
     var JST = window.JST = window.JST || {};

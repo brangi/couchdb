@@ -14,11 +14,10 @@ define([
        "app",
        "api",
        "backbone",
-       "lodash",
        "modules/fauxton/base"
 ],
 
-function (app, FauxtonAPI, backbone, _, Fauxton) {
+function (app, FauxtonAPI, backbone, Fauxton) {
   var Stats = {};
 
   Stats.Collection = Backbone.Collection.extend({
